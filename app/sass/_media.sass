@@ -1,0 +1,290 @@
+@media (max-width: 1439px)
+    .sidepanel
+        display: none
+@media (max-width: 1199px)
+    .container
+        width: 960px
+    .sidepanel
+        display: none
+    .about
+        &__wrap
+            grid-template-columns: 400px 520px
+            column-gap: 40px
+            .about__skills
+                grid-template: minmax(repeat(2, 115px), auto) / repeat(2, 250px)
+                column-gap: 20px
+                &__item
+                    grid-template-columns: 40px 190px
+                    column-gap: 15px
+    .resume
+        &__wrap
+            column-gap: 40px
+    .tools
+        &__wrap
+            grid-template-columns: repeat(3, 270px)
+            grid-template-rows: minmax(repeat(2, 270px), auto)
+            grid-auto-rows: minmax(270px, auto)
+            justify-content: center
+        &__possession
+            grid-template-columns: repeat(2, 350px)
+            grid-template-rows: repeat(2, 70px)
+            grid-auto-rows: repeat(2, 70px)
+            gap: 30px 45px
+            justify-content: center
+
+    .portfolio
+        &__wrap
+            grid-template-columns: repeat(auto-fit, 280px)
+            grid-auto-rows: 280px
+            justify-content: space-around
+            row-gap: 35px
+            .vertical
+                grid-row: unset
+                grid-column: unset
+            .horizontal
+                grid-row: unset
+                grid-column: unset
+    .contacts
+        padding: 90px 0 50px
+        &__wrap
+            grid-template-columns: 400px 520px
+            column-gap: 20px
+            padding: 0
+            .contacts__descr
+                .contacts__form
+                    grid-template: 45px 190px 45px / repeat(2, 255px)
+
+@media (max-width: 991px)
+    .container
+        width: 720px
+    .title
+        &_fz36
+            font-size: 30px
+    .about
+        padding-top: 70px
+        &__wrap
+            grid-template-columns: 310px 380px
+            column-gap: 30px
+            .about__skills
+                grid-template-columns: 380px
+                grid-auto-rows: minmax(115px, auto)
+                row-gap: 20px
+                &__item
+                    grid-template-columns: 40px 320px
+                    column-gap: 20px
+    .resume
+        padding-top: 70px
+        &__wrap
+            grid-template-columns: repeat(2, 350px)
+            column-gap: 20px
+            padding: 60px 0 0
+    .tools
+        padding-top: 70px
+        &__wrap
+            grid-template-columns: repeat(2, 270px)
+            grid-template-rows: minmax(repeat(3, 270px), auto)
+            grid-auto-rows: minmax(270px, auto)
+        &__possession
+            margin-top: 70px
+            grid-template-columns: repeat(2, 350px)
+            grid-template-rows: repeat(2, 70px)
+            grid-auto-rows: 70px
+            gap: 20px 20px
+            justify-content: center
+    .portfolio
+        padding-top: 70px
+        &__wrap
+            justify-content: center
+            gap: 35px
+
+    .pricelist
+        padding-top: 70px
+        &__wrap
+            grid-template-columns: repeat(2, 330px)
+            justify-content: center
+            gap: 15px 30px
+            padding: 0
+            margin-top: 50px
+    .contacts
+        padding: 70px 0 40px
+        &__wrap
+            grid-template-columns: 310px 390px
+            column-gap: 20px
+            padding: 0
+            .contacts__descr
+                .contacts__form
+                    grid-template: 45px 107px 45px / repeat(2,190px)
+                    margin-top: 20px
+                    row-gap: 15px
+                .contacts__form__triggers
+                    grid-template-rows: 45px
+@media (max-width: 767px)
+    .container
+        width: 540px
+    .promo
+        &__subtitle
+            font-size: 34px
+    .about
+        padding-top: 50px
+        &__wrap
+            grid-template: 400px auto auto / 1fr
+            .about__photo
+                grid-row: unset
+            .about__skills
+                grid-template-columns: repeat(2, 260px)
+                grid-auto-rows: minmax(115px, auto)
+                row-gap: 20px
+                &__item
+                    grid-template-columns: 40px 200px
+                    column-gap: 20px
+    .resume
+        padding-top: 70px
+        &__wrap
+            grid-template-columns: 1fr
+            row-gap: 40px
+            padding: 30px 50px
+    .tools
+        padding-top: 50px
+        &__wrap
+            margin-top: 50px
+            grid-template-columns: repeat(2, 270px)
+            grid-template-rows: minmax(repeat(3, 270px), auto)
+            grid-auto-rows: minmax(270px, auto)
+        &__possession
+            margin-top: 50px
+            grid-template-columns: repeat(2, 250px)
+            grid-template-rows: repeat(2, 70px)
+            grid-auto-rows: 70px
+            gap: 20px 20px
+            justify-content: center
+    .pricelist
+        padding-top: 50px
+        &__wrap
+            grid-template-columns: repeat(auto-fit, 330px)
+            justify-content: center
+            row-gap: 15px
+            padding: 0
+            margin-top: 35px
+    .contacts
+        padding: 50px 0 30px
+        &__wrap
+            grid-template-columns: 1fr
+            column-gap: 20px
+            padding: 0 30px
+            .contacts__photo
+                display: none
+            .contacts__descr
+                .contacts__form
+                    grid-template: 45px 107px 45px / repeat(2,230px)
+                    margin-top: 23px
+                    row-gap: 25px
+
+@media (max-width: 575px)
+    .container
+        width: 100%
+        padding: 0 10px
+    .title
+        &_fz36
+            font-size: 24px
+    .divider
+        margin: 15px auto 0
+    .section__subtitle
+        margin-top: 20px
+    .humburger
+        right: 20px
+    .menu
+        &__block
+            width: 250px
+            padding-left: 20px
+    .promo
+        background: url('./../img/main_bg_mobile.jpg') center center / cover #BDE8FB
+        &__subtitle
+            font-size: 26px
+        &__btns
+            margin-top: 32px
+    .about
+        padding-top: 40px
+        .divider
+            margin: 15px 0 0
+        &__wrap
+            grid-template-columns: 1fr
+            row-gap: 20px
+            .about__descr
+                padding-top: 0
+                &__title
+                    margin-top: 20px
+                &__subtitle
+                    margin-top: 26px
+                &__text
+                    margin-bottom: 0
+            .about__skills
+                grid-template-columns: 200px
+                grid-auto-rows: minmax(115px, auto)
+                row-gap: 20px
+    .resume
+        padding-top: 40px
+        &__wrap
+            grid-template-columns: 1fr
+            row-gap: 40px
+            padding: 0
+            padding-top: 40px
+            .resume__column__item__head
+                .resume__column__location
+                    width: 90%
+    .tools
+        padding-top: 40px
+        &__wrap
+            margin-top: 20px
+            grid-template-columns: 270px
+            grid-template-rows: minmax(repeat(7, 270px), auto)
+            grid-auto-rows: minmax(270px, auto)
+        &__possession
+            margin-top: 50px
+            grid-template-columns: 300px
+            grid-template-rows: repeat(6, 70px)
+            grid-auto-rows: 70px
+            row-gap: 40px
+    .portfolio
+        padding-top: 40px
+        &__wrap
+            margin-top: 40px
+            justify-content: center
+            row-gap: 20px
+    .pricelist
+        padding-top: 40px
+        &__wrap
+            margin-top: 20px
+            grid-template-columns: repeat(auto-fit, 295px)
+            .pricelist__item
+                &__title
+                    width: 67%
+    .contacts
+        padding: 40px 0 50px
+        .divider
+            margin: 15px 0 0
+        &__wrap
+            grid-template-columns: 1fr
+            column-gap: 20px
+            padding: 0
+            .contacts__photo
+                display: none
+            .contacts__descr
+                &__subtitle
+                    margin-top: 20px
+                .contacts__form
+                    grid-template: repeat(2,45px) repeat(2, 107px) / 1fr
+                    margin-top: 30px
+                    row-gap: 20px
+                    &__textarea, &__triggers
+                        grid-column: unset
+
+                    &__triggers
+                        grid-template-columns: 220px
+                        grid-template-rows: 45px
+                        justify-content: center
+                        row-gap: 15px
+                        .contacts__form__policy
+                            justify-self: center
+                            width: 180px
+                        .contacts__btn
+                            order: 1
